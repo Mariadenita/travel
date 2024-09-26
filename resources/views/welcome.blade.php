@@ -166,27 +166,26 @@
 </section>
 <section>
 <div class="container py-5">
-        <div class="row justify-content-center ">
-            <div class="col-md-5 col-lg-4">
-                <div class="mb-3">Our Story</div>
-                <h1 class="mb-5 text-primary-emphasis">About Us</h1>
-                <p style="text-align: justify;">
-                    At Trezzert, we are dedicated to providing exceptional travel experiences across Sri Lanka. Specializing in customizable tour packages, we offer everything from cultural explorations to beach getaways, wildlife adventures, and more. Our mission is to make your journey seamless, offering accommodation, meals, and transportation tailored to your preferences.
-                    With a focus on safety and customer satisfaction, we travel with you throughout your trip, resolving any issues along the way. Whether you choose a pre-designed package or create your own, Trezzert is here to deliver a hassle-free, unforgettable Sri Lankan adventure.
-                </p>
-            </div>
-            <div class="col-md-6 col-lg-6 ">
-            <div class="row justify-content-center ">
-                <div class="col-md-7 col-lg-6 col-sm-6 d-flex align-items-center align-items-lg-start justify-content-center">
-                    <img class="rounded-shape1 img-fluid h-75" src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3" alt="">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 col-lg-6 pe-lg-5 pe-md-3 pe-auto">
+                    <div class="mb-2 fs-4">Our Story</div>
+                    <h1 class="mb-4 text-primary">About Us</h1>
+                    <p style="text-align: justify;">
+                        At Trezzert, we are dedicated to providing exceptional travel experiences across Sri Lanka. Specializing in customizable tour packages, we offer everything from cultural explorations to beach getaways, wildlife adventures, and more. Our mission is to make your journey seamless, offering accommodation, meals, and transportation tailored to your preferences. With a focus on safety and customer satisfaction, we travel with you throughout your trip, resolving any issues along the way. Whether you choose a pre-designed package or create your own, Trezzert is here to deliver a hassle-free, unforgettable Sri Lankan adventure.
+                    </p>
                 </div>
-                <div class="col-md-7 col-lg-6 col-sm-6 d-flex align-items-center align-items-lg-end justify-content-center">
-                    <img class="rounded-shape2 img-fluid h-75" src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3" alt="">
+                <div class="col-md-5 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-12 col-lg-6 d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                            <img class="rounded-shape1 object-fit-cover img-fluid pb-lg-5 pb-md-0 pb-3 mb-lg-5 mb-md-0 mb-0 " src="img/Jaffna.png" alt="Sri Lanka Travel Image 1" style=" border-radius: 0 25% 0 25%;">
+                        </div>
+                        <div class="col-6 col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
+                            <img class="rounded-shape2 object-fit-cover img-fluid pt-lg-5 pt-md-0 pt-3 mt-lg-5 mt-md-0 mt-0" src="img/Jaffna.png" alt="Sri Lanka Travel Image 2" style="border-radius: 25% 0 25% 0; ">
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
-    </div>
 </section>
 <section >
    <div class="container py-3">
@@ -297,29 +296,51 @@
 </section>
 
 <section>
-  <div class="container p-5">
-  <h6 class="text-center">Gallery</h6>
-  <h1 class="mb-5 text-center text-primary-emphasis">Unforgettable moment</h1>
-  <div class="row">
-  <div class="col-md-6 col-sm-12">
-    <img src="img/jaffna.png" alt="Jaffna" class="img-fluid" style=" height:600px; width: 100%;">
-  </div>
-  <div class="col-md-6 col-sm-12">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 mb-4">
-        <img src="img/Trinco.png" alt="Trincomalee" class="img-fluid"  style=" height:300px; width: 100%;">
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <img src="img/Trinco.png" alt="Trincomalee" class="img-fluid"  style=" height:265px; width: 100%;">
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <img src="img/Trinco.png" alt="Trincomalee" class="img-fluid"  style=" height:265px; width: 100%;">
-      </div>
+<div class="container mt-5">
+    <h5 class="text-center mb-2">Gallery</h5>
+    <h2 class="text-center mb-4 fw-bold text-primary">Unforgettable moment</h2>
+    <div class="row g-3">
+        <div class="col-md-6 d-flex">
+            <div class="position-relative w-100 h-100">
+                <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 h-100 object-fit-cover">
+                <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                    <h4 class="fw-bold m-0">JAFFNA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+            <div class="row g-3 h-50 mb-lg-0 mb-md-0 mb-3 pb-5">
+                <div class="col-12">
+                    <div class="position-relative h-100">
+                        <img src="{{ asset('img/Trinco.png') }}" alt="Trinco" class="img-fluid rounded w-100 h-100 object-fit-cover">
+                        <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                            <h4 class="fw-bold m-0">TRINCO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-50 pt-0 mt-3 mt-md-4 mt-lg-4 gx-3">
+                <div class="col-6">
+                    <div class="position-relative h-100">
+                        <img src="{{ asset('img/Trinco.png') }}" alt="batti" class="img-fluid rounded w-100 h-100 object-fit-cover">
+                        <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                            <h4 class="fw-bold m-0">BATTI</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="position-relative h-100 ">
+                        <img src="{{ asset('img/Trinco.png') }}" alt="ampara" class="img-fluid rounded w-100 h-100 object-fit-cover">
+                        <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                            <h4 class="fw-bold m-0">AMPARA</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-    
-  </div>
+
 
 </section>
 <div class="container p-5 text-center">
