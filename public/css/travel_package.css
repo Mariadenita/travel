@@ -1,0 +1,14 @@
+.separator {
+    color: white;
+    width: 	1px;
+    border-right: 2px dashed #ff0000;
+  }
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-color: #F22E2E3D;
+  border:none;
+  background-image: none !important; /* Hide the background image */
+            }
+.invalid-feedback{
+    color:#8E0E0E;   
+}

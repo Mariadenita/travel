@@ -1,132 +1,7 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+@extends('layouts.app')
+@section('title','')
+@section('main-content')
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-       main {
-            background: #FFEFEF;
-        }
-        .bg-img {
-            background: url('img/Box.png');
-            background-size: cover;
-            overflow: hidden;
-            text-align: center;
-        }
-        .rounded-shape1 {
-           
-            border-radius: 0 25% 0 25%;
-        }
-        .rounded-shape2 {
-           
-           border-radius: 25% 0 25% 0;
-       }
-        .foot-main {
-            box-shadow: 0px -4px 25px 0px #00000040;
-        }
-        .foot-sub {
-            position: absolute;
-            top: -5%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0px 4px 25px 0px #00000040;
-        }
-@media screen and (min-width: 576px) {
-  .my-carousel .carousel-inner {
-    display: flex;
-    width: 90%;
-    margin-inline: auto;
-    padding: 1em 0;
-    overflow: hidden;
-  }
-  .my-carousel .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100% / 2);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .my-carousel .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100% / 3);
-  }
-}
-
-.my-carousel .carousel-control-prev,
-.my-carousel .carousel-control-next {
-  width: 3rem;
-  height: 3rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-        
-    </style>
-    </head>
-
-    <body>
-<header>
-  <div class="bg-white">
-  <div class="container">
-  <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-        <a class="d-flex text-decoration-none" href="">
-        <img class=" mt-3" src="{{ asset('img/logo.svg') }}" alt="logo" style="width: 80%;">
-        </a>
-        <div class="d-block d-lg-none">
-        <i class="fa-solid fa-user fs-4"></i>
-        </div>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item me-5">
-          <a class="nav-link active fs-5 fw-bold" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link fs-5 fw-bold" href="#">Travel Package</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link fs-5 fw-bold" href="#">About Us</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link fs-5 fw-bold" href="#">Booking Dashboard</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link fs-5 fw-bold" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-    <div class="d-none d-lg-block">
-    <i class="fa-solid fa-user fs-4"></i>
-    </div>
-
-  </div>
-</nav>
-  </div>
-  </div>
- 
-
-</header>
-<main>
 <section>
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators mb-2 mb-lg-4 mb-md-4">
@@ -277,7 +152,7 @@
 </section>
 
 <section>
-<div class=" bg-img">
+<div class="bg-img">
     <div class=" row justify-content-center z-1 ">
         <div class="col-md-8 col-lg-4 my-5 p-3">
             <h1 class="text-white">Why choose Trezzert?</h1>
@@ -353,7 +228,7 @@
 <h5>Testimonial</h5>
         <h1 class="mb-5 text-primary-emphasis">What Our Travelers Say: Real Stories, Real Experiences</h1>
         <span>Create a visual identity for your company and overall brand</span>
-  <div id="testimonialCarousel" class="carousel pb-5 my-carousel">
+  <div id="testimonialCarousel" class="carousel my-carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="card border-0 mx-2">
@@ -564,213 +439,13 @@
 </div>
 </section>
 
+@endsection
 
-
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const multipleItemCarousel = document.querySelector("#testimonialCarousel");
-
-    if (window.matchMedia("(min-width:576px)").matches) {
-        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-            interval: false
-        });
-
-        const carouselInner = document.querySelector(".carousel-inner");
-        const carouselItems = document.querySelectorAll(".carousel-item");
-        const carouselWidth = carouselInner.scrollWidth;
-        const cardWidth = carouselItems[0].offsetWidth;
-        
-        let scrollPosition = 0;
-
-        const nextButton = document.querySelector(".carousel-control-next");
-        const prevButton = document.querySelector(".carousel-control-prev");
-
-        nextButton.addEventListener("click", function () {
-            if (scrollPosition < carouselWidth - cardWidth * 3) {
-                console.log("next");
-                scrollPosition += cardWidth;
-                carouselInner.scrollTo({
-                    left: scrollPosition,
-                    behavior: "smooth"
-                });
-            }
-        });
-
-        prevButton.addEventListener("click", function () {
-            if (scrollPosition > 0) {
-                scrollPosition -= cardWidth;
-                carouselInner.scrollTo({
-                    left: scrollPosition,
-                    behavior: "smooth"
-                });
-            }
-        });
-    } else {
-        multipleItemCarousel.classList.add("slide");
-    }
-});
-
-</script>        
-
-</main>
-    
-<footer>
-    <div  class=" bg-white position-relative foot-main p-5">
-    <div class="position-absolute white rounded-3 text-center py-1 px-3 bg-white foot-sub">
-            <div class="d-flex ">
-                <img src="img/Rectangle 13.png" alt="Bird icon representing notifications"  style="width: 150px;height: 150px;" class="d-none d-sm-block">
-                <div class="ms-3 d-flex flex-column justify-content-center">
-                <span class="text-primary text-start fw-bold">News Letters</span>
-                    <h5 class="fw-bold text-danger text-nowrap">
-                        Get Our Every Single Notification 
-                    </h5>
-                    <form class="d-flex justify-content-center align-items-center mt-3" novalidate>
-                        <input type="email" class="form-control w-75 rounded-pill me-2" placeholder="Enter your email here" required>
-                        <button class="btn btn-danger rounded-pill">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        
-    </div>
-    <div class="container text-center  ">
-                <a class="d-flex text-decoration-none" href="">
-                <img class=" mt-3" src="{{ asset('img/logo.svg') }}" alt="logo" style="width: 15%;">
-                </a>
-        <div class="row align-items-start">
-            <div class=" col-md-5 col-lg-4 text-white">
-                <div class="text-dark fs-6 mb-3" style="text-align:justify">
-                At Trezzert, our mission is to empower our guests by providing uniquely personalized travel experiences throughout Sri Lanka.
-                    We believe that travel should be about exploration and personal growth. 
-                    Our dedicated team ensures each journey is thoughtfully curated to meet the specific desires and needs of our clients, 
-                ensuring every adventure is as unique as our travelers.
-                </div>
-                <div class="d-block d-sm-none mb-3">
-                <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
-                    <span class="me-3 text-dark fs-4">
-                    <i class="fa-brands fa-facebook"></i>
-                    </span>
-                    <span class="me-3 text-dark fs-4">
-                    <i class="fa-brands fa-instagram"></i>
-                    </span>
-                    <span class="me-3 text-dark fs-4">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    </span>
-                    <span class="me-3 text-dark fs-4">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    </span>
-                    
-                </div>
-                
-            </div>
-            <div class="col-md-7 col-lg-8 text-center">
-                <div class="row mt-md-5 mt-lg-0">
-                    <div class=" col-md-5 col-lg-4 mb-4 p-1">
-                        <h5 class="text-uppercase text-danger fw-bold">Quick Link</h5>
-            
-                        <ul class="list-unstyled mb-0">
-                            <li >
-                            <a href="" class=" text-decoration-none text-dark zoom-text" >About</a>
-                            </li>
-                            <li>
-                            <a href="" class="text-decoration-none text-dark zoom-text">Privacy Policy</a>
-                            </li>
-                            <li>
-                            <a href="" class=" text-decoration-none text-dark zoom-text">Terms and Condition</a>
-                            </li>
-                            <li>
-                            <a href=""  class=" text-decoration-none text-dark zoom-text">Return Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-7 col-lg-4 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-danger fw-bold">Contact</h5>
-            
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                            <a href="#!" class="text-dark text-decoration-none">+94777538775</a>
-                            </li>
-                            <li>
-                            <a href="" target="_blank" class="text-dark text-decoration-none" title="Mail">info@travel.com</a>
-                            </li>
-                            <li>
-                            <a href="" target="_blank" class="text-dark text-decoration-none" title="Address"> No 032, main street, Colombo,<br> Sri Lanka.</a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="col-md-10 col-lg-4 text-white text-center ms-sm-3 ms-lg-0 d-none d-sm-block">
-                        <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
-                            <span class="me-3 text-dark fs-4">
-                            <i class="fa-brands fa-facebook"></i>
-                            </span>
-                            <span class="me-3 text-dark fs-4">
-                            <i class="fa-brands fa-instagram"></i>
-                            </span>
-                            <span class="me-3 text-dark fs-4">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            </span>
-                            <span class="me-3 text-dark fs-4">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            </span>
-                            
-                    </div> 
-                    
-                </div>
-                
-            </div>
-            
-            
-        </div>
-        <hr class="m-0 text-danger fw-bold">
-    
-        <!-- Section: Copyright -->
-        <section class="pb-3 pt-0">
-        <div class="row d-flex align-items-center">
-            <!-- Grid column -->
-            <div class="col-md-8 col-lg-6 text-lg-start text-md-start text-sm-center">
-            <!-- Copyright -->
-            <div class="py-3 text-dark">
-            Copyright © 2024 All rights reserved by:
-                <a class="text-decoration-none text-dark" href=""
-                    >Travel</a
-                >
-            </div>
-            <!-- Copyright -->
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-6 text-lg-end text-sm-center">
-            <!-- Copyright -->
-            <div class="py-3 text-dark">
-            Web Developed by 
-                <a class="text-decoration-none text-dark" href="https://www.apexx.lk/"
-                    >Apexx Private Limited</a
-                >
-            </div>
-            <!-- Copyright -->
-            </div>
-        </div>
-        </section>
-        <!-- Section: Copyright -->
-
-    </div>
-        
-</div>
-
-</footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-
-
-
-    </body>
-</html>
+{{-- asset link start --}}
+@section('styles')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endsection
+@section('scripts')
+<script src="{{ asset('js/home.js') }}"></script>
+@endsection
+{{-- asset link end --}}
