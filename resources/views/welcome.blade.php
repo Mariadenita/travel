@@ -40,7 +40,7 @@
         }
         .foot-sub {
             position: absolute;
-            top: 0%;
+            top: -5%;
             left: 50%;
             transform: translate(-50%, -50%);
             box-shadow: 0px 4px 25px 0px #00000040;
@@ -86,9 +86,13 @@
   <div class="container">
   <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-  <a class="d-flex text-decoration-none" href="">
-                    <img class=" mt-3" src="{{ asset('img/logo.svg') }}" alt="logo" style="width: 80%;">
-                    </a>
+        <a class="d-flex text-decoration-none" href="">
+        <img class=" mt-3" src="{{ asset('img/logo.svg') }}" alt="logo" style="width: 80%;">
+        </a>
+        <div class="d-block d-lg-none">
+        <i class="fa-solid fa-user fs-4"></i>
+        </div>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -111,9 +115,10 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="d-none d-lg-block">
     <i class="fa-solid fa-user fs-4"></i>
     </div>
+
   </div>
 </nav>
   </div>
@@ -343,6 +348,7 @@
 
 
 </section>
+<section>
 <div class="container p-5 text-center">
 <h5>Testimonial</h5>
         <h1 class="mb-5 text-primary-emphasis">What Our Travelers Say: Real Stories, Real Experiences</h1>
@@ -556,6 +562,8 @@
     </button>
   </div>
 </div>
+</section>
+
 
 
 <script>
@@ -630,12 +638,29 @@
                 </a>
         <div class="row align-items-start">
             <div class=" col-md-5 col-lg-4 text-white">
-                <div class="text-dark fs-6" style="text-align:justify">
+                <div class="text-dark fs-6 mb-3" style="text-align:justify">
                 At Trezzert, our mission is to empower our guests by providing uniquely personalized travel experiences throughout Sri Lanka.
                     We believe that travel should be about exploration and personal growth. 
                     Our dedicated team ensures each journey is thoughtfully curated to meet the specific desires and needs of our clients, 
                 ensuring every adventure is as unique as our travelers.
                 </div>
+                <div class="d-block d-sm-none mb-3">
+                <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
+                    <span class="me-3 text-dark fs-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    </span>
+                    <span class="me-3 text-dark fs-4">
+                    <i class="fa-brands fa-instagram"></i>
+                    </span>
+                    <span class="me-3 text-dark fs-4">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+                    <span class="me-3 text-dark fs-4">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    </span>
+                    
+                </div>
+                
             </div>
             <div class="col-md-7 col-lg-8 text-center">
                 <div class="row mt-md-5 mt-lg-0">
@@ -673,7 +698,7 @@
                         </ul>
                     </div>
         
-                    <div class="col-md-7 col-lg-4 text-white text-lg-start text-md-start text-sm-center ms-sm-3 ms-lg-0">
+                    <div class="col-md-10 col-lg-4 text-white text-center ms-sm-3 ms-lg-0 d-none d-sm-block">
                         <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
                             <span class="me-3 text-dark fs-4">
                             <i class="fa-brands fa-facebook"></i>
