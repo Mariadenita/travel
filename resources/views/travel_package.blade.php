@@ -20,7 +20,7 @@
 
         <div class="container mb-5 ps-3">
           <h2 class="mb-3 text-primary-emphasis">Tour Plan</h2>
-      <!-- tour -->
+      
           <!-- Day 1 -->
           <div class="row ">
               <div class="col-1 d-flex flex-column align-items-center">
@@ -200,7 +200,8 @@
     <!-- Gallery -->
   <div class="container">
   <h3 class="mb-4  text-primary-emphasis">From our gallery</h3>
-  <div class="row d-none d-sm-block">
+  <div class="d-none d-sm-block">
+  <div class="row">
   <div class=" col-lg-6 col-md-8">
     <div class="row mb-3">
       <div class="col-md-12">
@@ -238,6 +239,8 @@
     </div>
   </div>
 </div>
+  </div>
+ 
 
   <div class="row d-block d-sm-none">
   <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
