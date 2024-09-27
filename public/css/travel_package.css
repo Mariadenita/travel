@@ -12,3 +12,20 @@
 .invalid-feedback{
     color:#8E0E0E;   
 }
+.fail{
+  background-color: #F22E2E3D;
+  color: #8E0E0E;
+  border:2px solid #8E0E0E ;
+}
+.success{
+  background-color: #1CB22247;
+  color: #014604;
+  border:2px solid #014604 ;
+}
+.s-gallery {
+  width: 100%; /* Ensure it fits within the column */
+  height: 300px; /* Maintain aspect ratio */
+  border-radius: 25% 0 25% 0;
+}
+
+

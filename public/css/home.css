@@ -1,8 +1,8 @@
 .bg-img {
-    background: url('img/Box.png');
-    background-size: cover;
-    overflow: hidden;
-    text-align: center;
+background: url('img/Box.png');
+background-size: cover;
+overflow: hidden;
+text-align: center;
 }
 
 @media screen and (min-width: 576px) {

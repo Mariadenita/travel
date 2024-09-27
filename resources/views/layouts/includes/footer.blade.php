@@ -8,8 +8,8 @@
                         Get Our Every Single Notification 
                     </h5>
                     <form class="d-flex justify-content-center align-items-center mt-3" novalidate>
-                        <input type="email" class="form-control w-75 rounded-pill me-2" placeholder="Enter your email here" required>
-                        <button class="btn btn-danger rounded-pill">Subscribe</button>
+                        <input type="email" class="form-control w-75 rounded me-2" placeholder="Enter your email here" required>
+                        <button class="btn btn-danger rounded">Subscribe</button>
                     </form>
                 </div>
             </div>

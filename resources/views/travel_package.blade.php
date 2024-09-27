@@ -3,7 +3,7 @@
 @section('main-content')
 <div class="position-relative">
             <img class="w-100" src="{{ asset('img/beach.png') }}" alt="Tropical Header">
-            <div class=" position-absolute top-50 start-50 text-white translate-middle fs-1 fw-bold text-nowrap">CONNECT WITH US</div>
+            <div class=" position-absolute top-50 start-50 text-white translate-middle fs-1 fw-bold text-nowrap">Travel Package Details</div>
         </div>
 <div class="container bg-white p-5 rounded  mt-5">
     <div class="row justify-content-center">
@@ -12,7 +12,7 @@
         <!-- Package Details -->
         <h2 class="mb-3 text-primary-emphasis">Package Name<i class="fa-solid fa-share-nodes ms-2 fs-3"></i></h2>
         <p class="h5 text-danger">Rs. XXXX / Per Couple</p>
-        <p class="text-muted text-primary-emphasis"><i class="fa-regular fa-clock me-2"></i>6 Nights & 5 Days</p>
+        <p class="text-muted text-primary-emphasis fw-bold"><i class="fa-regular fa-clock me-2"></i>6 Nights & 5 Days</p>
         <p class="text-muted" style="text-align: justify;">Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi.
            Et eligendi sint ab cumque veritatis aut provident aliquam. Aut aspernatur consequuntur eum quaerat distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti. Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? 
            Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi. Et eligendi sint ab cumque veritatis aut provident aliquam. 
@@ -20,7 +20,7 @@
 
         <div class="container mb-5 ps-3">
           <h2 class="mb-3 text-primary-emphasis">Tour Plan</h2>
-      
+      <!-- tour -->
           <!-- Day 1 -->
           <div class="row ">
               <div class="col-1 d-flex flex-column align-items-center">
@@ -31,7 +31,6 @@
                   <h5 class="font-weight-bold text-danger">Day 1: Jaffna</h5>
                   <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
                   <ul class="">
-                      <li>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</li>
                       <li>5 Star Accommodation</li>
                       <li>Breakfast, Lunch, Dinner</li>
                       <li>Car</li>
@@ -50,7 +49,6 @@
                 <h5 class="font-weight-bold text-danger">Day 2: Jaffna</h5>
                 <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
                 <ul class="">
-                    <li>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</li>
                     <li>5 Star Accommodation</li>
                     <li>Breakfast, Lunch, Dinner</li>
                     <li>Car</li>
@@ -69,7 +67,6 @@
                 <h5 class="font-weight-bold text-danger">Day 3: Jaffna</h5>
                 <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
                 <ul class="">
-                    <li>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</li>
                     <li>5 Star Accommodation</li>
                     <li>Breakfast, Lunch, Dinner</li>
                     <li>Car</li>
@@ -88,7 +85,6 @@
                 <h5 class="font-weight-bold text-danger">Day 4: Jaffna</h5>
                 <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
                 <ul class="">
-                    <li>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</li>
                     <li>5 Star Accommodation</li>
                     <li>Breakfast, Lunch, Dinner</li>
                     <li>Car</li>
@@ -105,7 +101,6 @@
                 <h5 class="font-weight-bold text-danger">Day 5: Jaffna</h5>
                 <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
                 <ul class="">
-                    <li>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</li>
                     <li>5 Star Accommodation</li>
                     <li>Breakfast, Lunch, Dinner</li>
                     <li>Car</li>
@@ -127,6 +122,11 @@
              Quo quidem neque iste expedita est dolo.
           </p>
           <form id="tourForm" novalidate>
+
+            <!-- <div class="success p-1 rounded"> <i class="fa-solid fa-circle-check me-1"></i>Successfully Send message!</div> -->
+
+            <!-- <div class="fail p-1 rounded"> <i class="fa-solid fa-circle-exclamation me-1"></i>Fail to Send</div> -->
+
             <div class="my-3">
               <input type="text" class="form-control border-0" id="name" placeholder="Name" required>
               <div class="invalid-feedback">
@@ -166,7 +166,7 @@
             <div class="mb-3">
               <input type="date" class="form-control border-0" id="startDate" placeholder="Start Date" required pattern="\d{2}/\d{2}/\d{4}">
                 <div class="invalid-feedback">
-                  Please provide a valid start date in dd/mm/yyyy format.
+                Please select an start date.
                 </div>
             
             </div>
@@ -198,8 +198,59 @@
         </div>
       </div>
     <!-- Gallery -->
-  
+  <div class="container">
+  <h3 class="mb-4  text-primary-emphasis">From our gallery</h3>
+  <div class="row d-none d-sm-block">
+  <div class=" col-lg-6 col-md-8">
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:416px">
+      </div>
+      <div class="col-md-6">
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" col-lg-3 col-md-4">
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:416px">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row d-block d-sm-none">
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  <div class="col-md-4 mb-3"><img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="s-gallery"></div>
+  </div>
+
+  </div>
+  
+  </div>
   </div>
 
 
