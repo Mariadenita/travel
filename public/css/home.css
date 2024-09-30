@@ -1,5 +1,5 @@
 .bg-img {
-background: url('img/Box.png');
+background-image: url('img/Box.png');
 background-size: cover;
 overflow: hidden;
 text-align: center;

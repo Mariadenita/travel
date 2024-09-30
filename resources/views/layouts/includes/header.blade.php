@@ -28,7 +28,7 @@
       </ul>
     </div>
     <div class="d-none d-lg-block">
-    <i class="fa-solid fa-user fs-4"></i>
+      <a href="{{ route('profile') }}"> <i class="fa-solid fa-user fs-4"></i></a>
     </div>
 
   </div>

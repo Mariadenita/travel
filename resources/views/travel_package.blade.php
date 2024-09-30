@@ -10,7 +10,7 @@
       <!-- Left Section -->
       <div class="col-md-10 col-lg-7">
         <!-- Package Details -->
-        <h2 class="mb-3 text-primary-emphasis">Package Name<i class="fa-solid fa-share-nodes ms-2 fs-3"></i></h2>
+        <h2 class="mb-1 text-primary-emphasis">Package Name<i class="fa-solid fa-share-nodes ms-2 fs-3"></i></h2>
         <p class="h5 text-danger">Rs. XXXX / Per Couple</p>
         <p class="text-muted text-primary-emphasis fw-bold"><i class="fa-regular fa-clock me-2"></i>6 Nights & 5 Days</p>
         <p class="text-muted" style="text-align: justify;">Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi.
@@ -205,22 +205,22 @@
   <div class=" col-lg-6 col-md-8">
     <div class="row mb-3">
       <div class="col-md-12">
-        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100" style="height:200px">
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 mb-3">
-        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:416px">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 " style="height:416px">
       </div>
       <div class="col-md-6">
         <div class="row mb-3">
           <div class="col-md-12">
-            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 " style="height:200px">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+            <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 " style="height:200px">
           </div>
         </div>
       </div>
@@ -229,12 +229,12 @@
   <div class=" col-lg-3 col-md-4">
     <div class="row mb-3">
       <div class="col-md-12">
-        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:416px">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100" style="height:416px">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100 object-fit-cover" style="height:200px">
+        <img src="{{ asset('img/Jaffna.png') }}" alt="Jaffna" class="img-fluid rounded w-100" style="height:200px">
       </div>
     </div>
   </div>
